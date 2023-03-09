@@ -6,6 +6,7 @@ const db = require('./model');
 db.sequelize.sync({ alter: true });
 const app = express();
 const port  = process.env.PORT; 
+console.log('testing')
 
 app.use('/graphql', graphqlHTTP({
     schema: schema,
